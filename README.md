@@ -1,3 +1,7 @@
+gatsby telemetry --disable
+http://localhost:8000/\_\_\_graphql
+npm run dev
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">

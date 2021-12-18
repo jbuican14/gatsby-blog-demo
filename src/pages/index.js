@@ -24,7 +24,7 @@ const IndexPage = ({ data }) => {
       <Seo title="Home" />
       <div>
         <h1>Demo Blogs</h1>
-        <h4>{data.allMarkdownRemark.totalCount}</h4>
+        <h4>Number of Blog :: {data.allMarkdownRemark.totalCount}</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <BlogLink to={node.fields.slug}>

@@ -1,5 +1,6 @@
 const path = require(`path`)
-exports.createPages = ({ graphql, actions }) => {
+
+exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   // createPage({
   //   path: "/using-dsg",
@@ -29,9 +30,11 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
     })
+    resolve()
   })
 }
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const { resolve } = require("path")
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   // console.log(actions)

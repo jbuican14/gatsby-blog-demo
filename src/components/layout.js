@@ -7,9 +7,8 @@
 
 import * as React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 
-import Header from "./header"
 import "./layout.css"
 
 const Layout = props => {

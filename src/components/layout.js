@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import * as React from "react"
+import React, { Component } from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
@@ -13,7 +13,6 @@ import "./layout.css"
 
 const Layout = props => {
   const rootPath = `${__PATH_PREFIX__}/`
-  // console.log(props, rootPath, props.children.length)
   let header
   if (props.children._owner) {
     header = (

@@ -1,5 +1,5 @@
 const path = require(`path`)
-exports.createPages = async ({ graphql, actions }) => {
+exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   // createPage({
   //   path: "/using-dsg",

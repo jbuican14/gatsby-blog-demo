@@ -18,7 +18,6 @@ const BlogTitle = styled.h3`
 `
 
 const IndexPage = ({ data }) => {
-  console.log(data, data.allMarkdownRemark)
   return (
     <Layout>
       <Seo title="Home" />
